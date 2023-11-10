@@ -72,7 +72,6 @@ alternatives --config java
 ```
 vi /etc/profile
 ```
-- add entry to profile 
 export JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.382.b05-1.amzn2.0.2.x86_64
 export PATH=$JAVA_HOME/bin$PATH
 echo $JAVA_HOME
