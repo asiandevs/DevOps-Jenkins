@@ -1,4 +1,16 @@
-# Jenkins: Disable, Discard and Delete Job
+# Jenkins: Schedule, Disable, Discard and Delete Job
+--------------------------
+## Schedule a Jenkins Job
+--------------------------
+1. Open your web browser and navigate to your Jenkins instance.
+2. Click on the name of the job you want to schedule or create a new job if you haven't done so.
+3. In the job configuration page, look for the "Build Triggers" section.
+4. Check the box next to "Build periodically" or a similar option, depending on your Jenkins version.
+5. In the text field provided, enter the schedule using cron syntax. The cron syntax is used to specify the timing of the build. For example, to schedule a job every day at 3:30 AM, you would use the cron expression `30 3 * * *`. [moreinfo-crontab](https://crontab.guru/)
+
+   ![image](https://github.com/asiandevs/images/blob/4e149889d2d46be9c649220cfb22db6ba1b7ea6a/Jenkinsschedule.jpg)
+6. Scroll down to the bottom of the configuration page and click "Save" to save your job configuration.
+
 -------------------------------
 ## Disable a Jenkins Job:
 -------------------------------
