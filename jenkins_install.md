@@ -75,7 +75,6 @@ alternatives --config java
 ```
 
 ```
-export PATH=$JAVA_HOME/bin$PATH
 sudo cp /etc/profile /etc/profile_backup
 echo 'export JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.382.b05-1.amzn2.0.2.x86_64' | sudo tee -a /etc/profile
 echo 'export PATH=$JAVA_HOME/bin$PATH' | sudo tee -a /etc/profile
