@@ -35,6 +35,8 @@ alternatives --config java
 ```
 export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-11.0.20.0.8-1.amzn2.0.1.x86_64
 export PATH=$JAVA_HOME/bin$PATH
+```
+```
 echo $JAVA_HOME
 ```
 ```
@@ -71,10 +73,13 @@ set / get  default Java version in Linux and select the version option
 ```
 alternatives --config java
 ```
-vi /etc/profile
+
 ```
-export JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.382.b05-1.amzn2.0.2.x86_64
 export PATH=$JAVA_HOME/bin$PATH
+sudo cp /etc/profile /etc/profile_backup
+echo 'export JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.382.b05-1.amzn2.0.2.x86_64' | sudo tee -a /etc/profile
+echo 'export PATH=$JAVA_HOME/bin$PATH' | sudo tee -a /etc/profile
+```
 ```
 - enable from the current session or reconnect the session to reflect the change
 ```
