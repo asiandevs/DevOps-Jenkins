@@ -70,6 +70,7 @@ Enable GitHub hook trigger for GITScm polling under Build Triggers.
    
    **Test Webhook:**
    - After setting up the webhook, make a small change in your Git repository and check if Jenkins is triggered automatically.
+   - in my case I have added a line` (print('Hello, World!'))` and verified.
 
 By following these steps, you'll have successfully integrated Jenkins with your Git repository, allowing for continuous integration and automated builds triggered by changes in your Git codebase.
 
