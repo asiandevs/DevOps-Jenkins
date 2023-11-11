@@ -84,19 +84,3 @@ source /etc/profile
 echo $JAVA_HOME
 java -version
 ```
-
-*NOTE*
-After getting I was getting an error message -
-"[root@ip-10-0-8-114 ~]# sudo service jenkins start
-Starting jenkins (via systemctl):  Job for jenkins.service failed because the control process exited with error code. See "systemctl status jenkins.service" and "journalctl -xe" for details."
-
-Resolve: 
-in my case with Jenkins verson is 2.414.3, I executed below command
-
-```
-sudo yum remove java*
-sudo amazon-linux-extras install java-openjdk11
-sudo systemctl restart jenkins
-sudo systemctl status jenkins
-```
-
