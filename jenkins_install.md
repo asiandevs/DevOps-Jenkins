@@ -79,7 +79,7 @@ sudo cp /etc/profile /etc/profile_backup
 echo 'export JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.382.b05-1.amzn2.0.2.x86_64' | sudo tee -a /etc/profile
 echo 'export PATH=$JAVA_HOME/bin$PATH' | sudo tee -a /etc/profile
 ```
-```
+
 - enable from the current session or reconnect the session to reflect the change
 ```
 source /etc/profile
@@ -87,4 +87,14 @@ source /etc/profile
 ```
 echo $JAVA_HOME
 java -version
+```
+
+
+** Note ** Job for jenkins.service failed because the control process exited with error code. See "systemctl status jenkins.service" and "journalctl -xe" for details.
+To resolve this error : in my case -I remove previously installed java and reinstall
+```
+systemctl stop jenkins
+sudo yum remove java* install java 11
+sudo amazon-linux-extras install java-openjdk11
+systemctl start jenkins
 ```
