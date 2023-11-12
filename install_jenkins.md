@@ -97,6 +97,5 @@ sudo yum remove java* install java 11
 sudo amazon-linux-extras install java-openjdk11
 systemctl start jenkins
 ```
-# [ERROR] This build requires at least Java 17, update your JVM, and run the build again
-[ERROR] -> [Help 1]
+# [Error] This build requires at least Java 17, update your JVM, and run the build again
 [Install Java on CentOS 7] (https://www.ovhcloud.com/en-au/community/tutorials/how-to-install-java-centos/) 
