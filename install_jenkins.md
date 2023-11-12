@@ -55,7 +55,7 @@ $ sudo systemctl start jenkins
 $ sudo systemctl status jenkins
 ```
 
-NOTE: For other version of Java 
+NOTE: For other version of Java [e.g., java-1.8.0-openjdk-devel]
 ---------------------
 ## Install java
 ---------------------
@@ -88,7 +88,6 @@ source /etc/profile
 echo $JAVA_HOME
 java -version
 ```
-
 
 ## [Error] Job for jenkins.service failed because the control process exited with error code. See "systemctl status jenkins.service" and "journalctl -xe" for details.
 To resolve this error : in my case -I remove previously installed java and reinstall
